@@ -1,8 +1,9 @@
 <?php
     class Abc{
-        function __construct()
+        function __construct($y)
         {
-            echo "Contructor here<br>";
+            $this->x = $y;
+            return $this->x;
         }
 
         function show() {
@@ -25,7 +26,10 @@
       * if we run program now after making an object, both the function will execute
       * even without calling we can see their echo messages.
     */
-     $obj = new Abc();
+     $obj = new Abc(25);
+     echo $obj->x;
+     echo "<br>";
+
 
     /**
      * Now if we want to call the show function we will need to call it using object created.

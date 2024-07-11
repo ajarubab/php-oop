@@ -1,5 +1,5 @@
 <?php
-    class Abc {
+    class Apple {
         public $x = 100;
 
         function preIncr() {
@@ -18,7 +18,7 @@
     echo "<br>";
     echo "<br>";
     
-    $obj1 = new Abc();
+    $obj1 = new Apple();
     echo "value of x in the class initially is : $obj1->x";
     echo "<br>";
     echo "After iterating preIncr function first time value of x is : ". $obj1->preIncr();
@@ -31,7 +31,7 @@
     echo "<br>";
     echo "<br>";
 
-    $obj2 = new Abc();
+    $obj2 = new Apple();
     echo "value of x when multiplied by 5 is : ". 5*$obj2->x;
     echo "<br>";
     echo "After iterating preIncr function first time value of x is : ". 2 * $obj2->preIncr();
@@ -49,7 +49,7 @@
     echo "<br>";
     echo "<br>";
 
-    $obj3 = new Abc();
+    $obj3 = new Apple();
     echo "value of x in the class initially is : $obj3->x";
     echo "<br>";
     echo "After iterating preIncr function first time value of x is : ". $obj3->postIncr();
@@ -63,7 +63,7 @@
     echo "<br>";
     echo "<br>";
 
-    $obj4 = new Abc();
+    $obj4 = new Apple();
     echo "value of x when multiplied by 5 is : ". 5*$obj4->x;
     echo "<br>";
     echo "After iterating preIncr function first time value of x is : ". 2 * $obj4->postIncr();

@@ -1,7 +1,9 @@
 <?php
     class Abc{
+        public $x;
         function __construct($y)
         {
+
             $this->x = $y;
             return $this->x;
         }

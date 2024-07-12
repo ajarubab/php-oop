@@ -2,7 +2,7 @@
     class Class1 {
         public $x;
         function __construct() {
-            $this->x = 5 ;
+            $this->x = 5;
             // echo " Class1 Contructor<br>";
         }
 
@@ -13,9 +13,10 @@
     
     class Class2 extends Class1{
         function __construct() {
-            // parent::__construct();      // results 90                       // calls parent class contructor
+            parent::__construct();  
+            echo "abtak x value hai : $this->x <br>";
             $this->x = 90 ;
-            parent::__construct();          // results 5
+            echo "ab x ki value hai : $this->x";
             // echo "Class2 Contructor";
         }
 
